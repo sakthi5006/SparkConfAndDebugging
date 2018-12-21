@@ -1,19 +1,19 @@
 ---
 title: "README"
 ---
+# Purpose
 
+The scripts in this repos are made to make spark Debugging as easy as possible.
 
 # RUNNING examples
 
-+ sparkSubmit.sh (logs std and stderr? into sparkRunLogs) submits spark jar with specified parameters
++ sparkDebug.sh (logs std and stderr? into sparkRunLogs) submits spark jar with specified parameters
+
 ~~~
-./sparkSubmit.sh -ec 1 -ne 1 -em 512m -dm 1024m -emo 1536m -dmo 2048m  2>> sparkRunLogs 1>> sparkRunLogs
+./sparkDebug.sh -ec 1 -ne 1 -em 512m -dm 1024m -emo 1536m -dmo 2048m  # 2> sparkRunLogs 1> sparkRunLogs
 ~~~
-+ sparkScalaShell.sh starts scala shell with specified parameters
-~~~
-./sparkScalaShell.sh -dm 20g -em 3g -ne 1 -ec 1 -ydmo=512m -yemo=512m
-~~~
-+ hadoop.sh
+
++ hadoop.sh - starts all hadoop components
 ~~~
 hadoop.sh start
 hadoop.sh stop
@@ -21,4 +21,12 @@ hadoop.sh stop
 
 # SPECIFICATIONS
 
-+ for sparkSubmit, sparkScalaShell there are some predefined statically written variables that you cannot change via cli. This has been made to ease testing as multiple runs of same application are usually done.
+For sparkDebug there are some predefined statically written variables that you cannot change via cli. This has been made to ease testing as multiple runs of same application are usually done.
+**Examples**
++ applicationWithParameters=
+    + applicationWithParameters="--class org.apache.spark.examples.SparkPi     /opt/spark/examples/jars/spark-examples_2.11-2.4.0.jar 10"
+    + applicationWithParameters=
++ sparkAPI=
+    + sparkAPI="pyspark"
+    + sparkAPI="spark-submit"
+    + sparkAPI="spark-shell"

@@ -24,13 +24,13 @@ title: "DEBUG Spark 2 on Yarn"
     Exception in thread "main" org.apache.spark.SparkException: Application application_1545388712996_0019 finished with failed status
     	at org.apache.spark.deploy.yarn.Client.run(Client.scala:1149)
     	at org.apache.spark.deploy.yarn.YarnClusterApplication.start(Client.scala:1526)
-    	at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:849)
-    	at org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:167)
-    	at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:195)
-    	at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:86)
-    	at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:924)
-    	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:933)
-    	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+    	at org.apache.spark.deploy.sparkDebug.org$apache$spark$deploy$sparkDebug$$runMain(sparkDebug.scala:849)
+    	at org.apache.spark.deploy.sparkDebug.doRunMain$1(sparkDebug.scala:167)
+    	at org.apache.spark.deploy.sparkDebug.submit(sparkDebug.scala:195)
+    	at org.apache.spark.deploy.sparkDebug.doSubmit(sparkDebug.scala:86)
+    	at org.apache.spark.deploy.sparkDebug$$anon$2.doSubmit(sparkDebug.scala:924)
+    	at org.apache.spark.deploy.sparkDebug$.main(sparkDebug.scala:933)
+    	at org.apache.spark.deploy.sparkDebug.main(sparkDebug.scala)
     18/12/21 16:53:58 INFO ShutdownHookManager: Shutdown hook called
     ~~~
     + client mode

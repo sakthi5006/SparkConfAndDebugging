@@ -20,5 +20,5 @@ title: Configuration Specification of Spark
 
 ## GENERAL SPECIFICATIONS
 
-+ Spark 2.4  doed not have settings spark.yarn.executor.memoryOverhead & spark.yarn.driver.memoryOverhead anymore (Unlike Spark 2.2).
++ Spark 2.4  does not have settings spark.yarn.executor.memoryOverhead & spark.yarn.driver.memoryOverhead anymore (Unlike Spark 2.2).
 You can specify this by spark.executor.memoryOverhead spark.driver.memoryOverhead

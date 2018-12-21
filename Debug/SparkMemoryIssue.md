@@ -18,7 +18,7 @@ title: "DEBUG Spark 2 on Yarn"
 
 **General issue: Running Spark jobs on yarn failed in client and in cluster mode**
 
-    + cluster mode setting (--driver-memory 512m)
++ cluster mode setting (--driver-memory 512m)
     ~~~
     18/12/21 16:53:58 ERROR Client: Application diagnostics message: Shutdown hook called before final status was reported.
     Exception in thread "main" org.apache.spark.SparkException: Application application_1545388712996_0019 finished with failed status
@@ -33,7 +33,7 @@ title: "DEBUG Spark 2 on Yarn"
     	at org.apache.spark.deploy.sparkDebug.main(sparkDebug.scala)
     18/12/21 16:53:58 INFO ShutdownHookManager: Shutdown hook called
     ~~~
-    + client mode
++ client mode
     ~~~
     java.io.IOException: Failed to send RPC RPC 5774007918916349212 to /192.168.0.39:55308: java.nio.channels.ClosedChannelException
     	at org.apache.spark.network.client.TransportClient$RpcChannelListener.handleFailure(TransportClient.java:357)

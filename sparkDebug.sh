@@ -50,6 +50,10 @@ while [ "$1" != "" ]; do
         -all )          shift
                         settings="--driver-memory $dm --num-executors $ne --executor-memory $em --executor-cores $ec --conf \"spark.executor.memoryOverhead=$emo\" --conf \"spark.driver.memoryOverhead=$dmo\""
                                 ;;
+        -set )          shift
+                        settings="$settings $1"
+                                ;;
+
     esac
     shift
 done

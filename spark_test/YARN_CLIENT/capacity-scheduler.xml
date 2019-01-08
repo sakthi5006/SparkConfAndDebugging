@@ -1,0 +1,108 @@
+  <configuration>
+    
+    <property>
+      <name>yarn.scheduler.capacity.maximum-am-resource-percent</name>
+      <value>0.4</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.node-locality-delay</name>
+      <value>3</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.queue-mappings-override.enable</name>
+      <value>false</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.resource-calculator</name>
+      <value>org.apache.hadoop.yarn.util.resource.DefaultResourceCalculator</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.root.acl_administer_queue</name>
+      <value>yarn</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.root.capacity</name>
+      <value>100</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.root.default.acl_administer_queue</name>
+      <value>yarn</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.root.default.acl_submit_applications</name>
+      <value>yarn</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.root.default.capacity</name>
+      <value>70</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.root.default.maximum-capacity</name>
+      <value>80</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.root.default.ordering-policy</name>
+      <value>fifo</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.root.default.state</name>
+      <value>RUNNING</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.root.maximum-capacity</name>
+      <value>100</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.root.ordering-policy</name>
+      <value>utilization</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.root.queues</name>
+      <value>default,short_queue</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.root.short_queue.acl_administer_queue</name>
+      <value>*</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.root.short_queue.acl_submit_applications</name>
+      <value>falcon</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.root.short_queue.capacity</name>
+      <value>30</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.root.short_queue.maximum-capacity</name>
+      <value>95</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.root.short_queue.ordering-policy</name>
+      <value>fair</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.capacity.root.short_queue.state</name>
+      <value>RUNNING</value>
+    </property>
+    
+  </configuration>

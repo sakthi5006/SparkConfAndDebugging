@@ -1,0 +1,23 @@
+  <configuration>
+    
+    <property>
+      <name>sqoop.metastore.client.autoconnect.password</name>
+      <value>sskass12</value>
+    </property>
+    
+    <property>
+      <name>sqoop.metastore.client.autoconnect.url</name>
+      <value>jdbc:postgresql://bryht.estpak.ee:5432/sqoop</value>
+    </property>
+    
+    <property>
+      <name>sqoop.metastore.client.autoconnect.username</name>
+      <value>sqoop</value>
+    </property>
+    
+    <property>
+      <name>sqoop.metastore.client.record.password</name>
+      <value>true</value>
+    </property>
+    
+  </configuration>

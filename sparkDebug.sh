@@ -4,8 +4,9 @@ master=yarn
 deployMode=client
 #applicationWithParameters="--class org.apache.spark.examples.SparkPi     /opt/spark/examples/jars/spark-examples_2.11-2.4.0.jar 10"
 #applicationWithParameters=
-applicationWithParameters=piExample.py
-sparkAPI="spark-submit" # ested with spark-submit, pyspark, spark-shell
+#applicationWithParameters=piExample.py
+#sparkAPI="spark-submit" # ested with spark-submit, pyspark, spark-shell
+sparkAPI=pyspark
 # Performance related parameters
 
 ec=1
